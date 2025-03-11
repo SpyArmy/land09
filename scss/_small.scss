@@ -1,0 +1,153 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    font-weight: $lightWeight;
+    min-width: 320px;
+    background-color: #333;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {
+    background-color: white;
+    border-bottom: 1px solid $greyColor;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: $gutter;
+    align-items: center; //vertically
+    padding: .5rem $gutter;
+
+    .phone {
+        grid-column: 3 / 4;
+        text-align: right;
+        text-decoration: none;
+        color: black;
+        padding-right: 40px;
+    }
+}
+
+// end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+
+div #cards {
+    display: grid;
+    gap: 5px;
+    margin: 40px 0;
+
+    section {
+        position: relative;
+
+        h2 {
+            text-align: center;
+            color: black;
+            background-color: white;
+            padding: 10px;
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        img:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+div #customer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section {
+        padding: 7px;
+        margin: 40px 0;
+        img {
+            width: 100%;
+            height: auto;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+        }
+        p {
+            color: white;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+    h1 {
+        padding: 1rem $gutter.5rem $gutter;
+        font-size: 1.5rem;
+        color: goldenrod;
+        font-weight: $lightWeight
+    }
+
+    p {
+        padding: .5rem $gutter;
+        color: white;
+        line-height: $leading;
+    }
+}
+
+// end main
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: black;
+}
+
+// end footer wrapper
+
+footer {
+    font-size: .85rem;
+    padding: 1rem $gutter;
+    color: $greyColor;
+    text-align: center;
+    line-height: $leading;
+
+    a {
+        color: $greyColor;
+    }
+}
+
+// end footer
+
+.swiper,
+.swiper img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,20 @@
+header, nav, main {
+    max-width: 960px;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+
+
+div #cards {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div #customer {
+
+    section {
+        grid-template-columns: 200px auto;
+        column-gap: 10px;
+    }
+}

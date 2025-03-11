@@ -1,0 +1,77 @@
+/* NAVIGATION STUFF GOES HERE  */
+#theBtn {
+    display: none;
+} // end Btn
+
+#theNav{
+    background-color: black;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    Li {
+        border-right: 1px soild #aaa ;
+    }
+    li a {
+        display: block;
+        padding: .9rem 1.2rem;
+        color: white;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: goldenrod;
+        color: black;
+    }
+    li.par > a::before {
+        content: "\25BC";
+        font-size: .75rem;
+        color: white;
+        padding-right: 10px;
+    }
+    li.active a {
+        background-color: goldenrod;
+        color: black;
+    }
+    li ul {
+        background-color: black;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        left: -999rem;
+    }
+    li ul li {
+        border-top: solid 1px #aaa ;
+    }
+    li:hover ul {
+        left: auto;
+    }
+} // end Nav
+
+
+.par ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: $primaryColor;
+    display: none;
+}
+
+.par:hover ul {
+    display: block;
+}
+
+
+div #cards {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+div #customer {
+
+    section {
+        display: grid;
+        grid-template-columns: 140px auto;
+        column-gap: 5px;
+        padding: 10px;
+    }
+}
