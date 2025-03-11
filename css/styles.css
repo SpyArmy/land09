@@ -328,7 +328,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr auto;
   -moz-column-gap: 10px;
        column-gap: 10px;
   align-items: center;
@@ -336,10 +336,9 @@ header {
 }
 header .phone {
   grid-column: 3/4;
-  text-align: right;
+  text-align: left;
   text-decoration: none;
   color: black;
-  padding-right: 40px;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -443,7 +442,7 @@ footer a {
     font-size: 1.6rem;
   }
   #theNav {
-    background-color: #3990c3;
+    background-color: black;
     padding: 0;
     margin: 0;
     height: 0;
@@ -456,9 +455,11 @@ footer a {
     font-size: 14px;
     color: white;
     text-decoration: none;
+    border-top: 1px soild #aaa;
   }
   #theNav li.active a {
-    background-color: #333;
+    background-color: goldenrod;
+    color: black;
   }
   #theNav li a:hover {
     background-color: goldenrod;
@@ -469,13 +470,13 @@ footer a {
   .par > a::after {
     content: "▼";
     font-size: 0.75rem;
-    color: aqua;
+    color: white;
     float: right;
   }
   .par ul {
     list-style-type: none;
     padding: 0;
-    background-color: #1d295f;
+    background-color: #333;
     display: none;
   }
   .par:hover ul {

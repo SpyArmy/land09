@@ -31,17 +31,16 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr auto;
     column-gap: $gutter;
     align-items: center; //vertically
     padding: .5rem $gutter;
 
     .phone {
         grid-column: 3 / 4;
-        text-align: right;
+        text-align: left;
         text-decoration: none;
         color: black;
-        padding-right: 40px;
     }
 }
 
