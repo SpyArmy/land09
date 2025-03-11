@@ -11,7 +11,7 @@
     padding: 0;
 
     Li {
-        border-right: 1px soild #aaa ;
+        border-top: 1px solid #aaa;
     }
     li a {
         display: block;
@@ -73,5 +73,13 @@ div #customer {
         grid-template-columns: 140px auto;
         column-gap: 5px;
         padding: 10px;
+    }
+}
+
+header {
+    grid-template-columns: 1fr 1fr;
+    .phone {
+        text-align: right;
+        margin-left: 12rem;
     }
 }

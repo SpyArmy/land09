@@ -31,7 +31,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr;
     column-gap: $gutter;
     align-items: center; //vertically
     padding: .5rem $gutter;

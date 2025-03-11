@@ -328,7 +328,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr;
   -moz-column-gap: 10px;
        column-gap: 10px;
   align-items: center;
@@ -479,9 +479,6 @@ footer a {
     background-color: #333;
     display: none;
   }
-  .par:hover ul {
-    display: block;
-  }
 }
 @media only screen and (min-width: 35rem) {
   /* NAVIGATION STUFF GOES HERE  */
@@ -496,7 +493,7 @@ footer a {
     padding: 0;
   }
   #theNav Li {
-    border-right: 1px soild #aaa;
+    border-top: 1px solid #aaa;
   }
   #theNav li a {
     display: block;
@@ -551,6 +548,13 @@ footer a {
          column-gap: 5px;
     padding: 10px;
   }
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
+  header .phone {
+    text-align: right;
+    margin-left: 12rem;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -566,5 +570,8 @@ footer a {
     grid-template-columns: 200px auto;
     -moz-column-gap: 10px;
          column-gap: 10px;
+  }
+  header .phone {
+    margin-left: 20rem;
   }
 }/*# sourceMappingURL=styles.css.map */
