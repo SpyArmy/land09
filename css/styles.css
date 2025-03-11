@@ -455,7 +455,7 @@ footer a {
     font-size: 14px;
     color: white;
     text-decoration: none;
-    border-top: 1px soild #aaa;
+    border-top: 1px solid #aaa;
   }
   #theNav li.active a {
     background-color: goldenrod;
@@ -526,7 +526,7 @@ footer a {
     left: -999rem;
   }
   #theNav li ul li {
-    border-top: solid 1px #aaa;
+    border-top: 1px solid #aaa;
   }
   #theNav li:hover ul {
     left: auto;
